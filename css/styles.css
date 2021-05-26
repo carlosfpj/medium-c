@@ -2,6 +2,37 @@
   background: #ffffff;
 }
 
+.conceptos {
+  margin-block-end: 64px;
+}
+
+.contenido a {
+  text-decoration: none;
+  font-family: 'roboto';
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  color: #616161;
+}
+
+.contenido li {
+  margin-block-start: 16px;
+}
+
+.contenido li::marker {
+  color: #616161;
+  font-family: 'roboto';
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contenido summary {
+  margin-block-end: 16px;
+  color:#616161;
+}
+
 .variantes {
   width: 280px;
 }
@@ -31,11 +62,71 @@
   /* color: #616161; */
 }
 
+.section-content-logo {
+  margin-bottom: 16px;
+}
+
+.section-content h3 {
+  font-family: 'roboto';
+  font-weight: 400;
+  font-size: 24px;
+  font-style: normal;
+  color: #424242;
+}
+
+.setup {
+  margin-block-end: 24px;
+}
+
+.setup-border {
+  border-inline-start: 4px solid #C4C4C4;
+  padding-inline-start: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+blockquote {
+  border-inline-start: 4px solid #212121;
+  padding-inline-start: 16px;
+}
+
+blockquote p {
+  color: #424242;
+  font-size: 24px;
+}
+
+blockquote span {
+  color: #616161;
+  font-size: 24px;
+
+}
+
+code {
+  font-family: 'roboto';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 h1 {
-  font-family: "roboto";
+  font-family: 'roboto';
   font-size: 60px;
   font-weight: 400;
   font-style: normal;
+}
+
+h2 {
+  font-family: 'roboto';
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+hr {
+  margin-block-end: 64px;
 }
 
 p {
@@ -43,6 +134,18 @@ p {
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
+  line-height: 24px;
+}
+
+p strong {
+  font-family: 'roboto';
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+pre {
+  background: #E5E5E5;
 }
 
 nav summary {
