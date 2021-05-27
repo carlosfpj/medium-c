@@ -67,11 +67,41 @@
 }
 
 .section-content h3 {
+  counter-increment: tittleList;
   font-family: 'roboto';
   font-weight: 400;
   font-size: 24px;
   font-style: normal;
   color: #424242;
+}
+
+.section-content h3::before {
+  content: counter(tittleList) '. ';
+}
+
+.section-content ol {
+  font-family: 'roboto';
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.section-content ul {
+  font-family: 'roboto';
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.section-content ul > li {
+  margin-top: 16px;
+}
+
+.section-content p > a {
+  text-decoration: underline;
+  font-weight: 500;
+  color: #000000;
 }
 
 .setup {
@@ -81,6 +111,11 @@
 .setup-border {
   border-inline-start: 4px solid #C4C4C4;
   padding-inline-start: 16px;
+}
+
+.wrapper {
+  width: 966px;
+  margin: auto;
 }
 
 body {
@@ -100,7 +135,6 @@ blockquote p {
 blockquote span {
   color: #616161;
   font-size: 24px;
-
 }
 
 code {
@@ -109,6 +143,45 @@ code {
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
+}
+
+footer {
+  height: 174px;
+  background: #212429;
+  color: #FFFFFF;
+}
+
+footer h3 {
+  font-family: 'roboto';
+  font-weight: 400;
+  font-size: 24px;
+  font-style: normal;
+  color: #424242;
+}
+
+input {
+  display: inline-block;
+  width: 280px;
+  height: 48px;
+  border: 1px solid #616161;
+  border-radius: 90px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'roboto';
+  padding: 12px 16px;
+}
+
+input::placeholder {
+  color: #424242;
+}
+
+input[type="submit"]{
+  background: black;
+  width: 119px;
+}
+
+input[value="Suscribirme"] {
+  color: #ffffff
 }
 
 h1 {
