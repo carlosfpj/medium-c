@@ -170,6 +170,10 @@
   margin-block-start: 16px;
 }
 
+.slider-bullets-list a:visited {
+  background: red;
+}
+
 .wrapper {
   width: 966px;
   margin: auto;
@@ -242,6 +246,12 @@ input {
   font-size: 16px;
   font-family: 'roboto';
   padding: 12px 16px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid black;
+  border-radius: 90px;
 }
 
 input::placeholder {
