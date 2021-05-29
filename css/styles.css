@@ -7,6 +7,10 @@
   padding-inline-start: 15px;
 }
 
+.contacto {
+  margin-block: 40px;
+}
+
 .contenido {
   margin-block-end: 64px;
 }
@@ -36,6 +40,20 @@
 .contenido summary {
   margin-block-end: 16px;
   color:#616161;
+}
+
+.form {
+  position: relative;
+}
+
+.form h3 {
+  margin-inline-start: 3px;
+  margin-block: 0px 16px;
+  font-family: 'roboto';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  color: #424242;
 }
 
 .variantes {
@@ -132,23 +150,30 @@
   white-space: nowrap;
   overflow: hidden;
   font-size: 0;
+  scroll-behavior: smooth;
 }
 
 .slider-image {
   width: 100%;
-  display: inline-block;
 }
 
 .slider-bullet {
   display: inline-block;
   width: 15px;
   height: 15px;
-  background: black;
+  background: #424242;
+  border-radius: 50%;
+}
+
+.slider-bullets-list {
+  text-align: center;
+  margin-block-start: 16px;
 }
 
 .wrapper {
   width: 966px;
   margin: auto;
+  margin-block-end: 80px;
 }
 
 body {
@@ -185,14 +210,22 @@ footer {
   height: 174px;
   background: #212429;
   color: #FFFFFF;
+  text-align: center;
 }
 
-footer h3 {
+footer img {
+  margin-inline-end: 19px;
+}
+
+footer p {
   font-family: 'roboto';
   font-weight: 400;
-  font-size: 24px;
+  font-size: 32px;
   font-style: normal;
-  color: #424242;
+  color: #ffffff;
+  padding-block-start: 48px;
+  margin-block: 0px;
+  padding-block-end: 16px;
 }
 
 input {
@@ -212,8 +245,20 @@ input::placeholder {
 }
 
 input[type="submit"]{
+  position: absolute;
+  right: 383px;
+  border: none;
   background: black;
   width: 119px;
+}
+
+input[type="text"]{
+  margin-inline-start: 3px;
+  margin-inline-end: 16px;
+}
+
+input[type="email"]{
+  margin-inline-start: 0px;
 }
 
 input[value="Suscribirme"] {
@@ -245,6 +290,7 @@ p {
   font-weight: 400;
   font-style: normal;
   line-height: 24px;
+  color: #424242;
 }
 
 p strong {

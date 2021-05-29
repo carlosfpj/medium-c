@@ -51,13 +51,13 @@
             <h3>Conceptos esenciales Desarrollo Web</h3>
               <ol class="conceptos">
               <li>
-                <a href="#que-es-html">Qué es HTMl</a>
+                <a href="#HTML">Qué es HTMl</a>
               </li>
               <li>
                 <a href="#etiquetas">Etiquetas</a>
               </li>
               <li>
-                <a href="#dom">DOM</a>
+                <a href="#DOM">DOM</a>
               </li>
               <li>
                 <a href="#semantica">Semántica</a>
@@ -66,7 +66,7 @@
                 <a href="#atributos">Atributos</a>
               </li>
               <li>
-                <a href="#que-es-css">Qué es CSS</a>
+                <a href="#css">Qué es CSS</a>
               </li>
               </ol>
           </div>
@@ -104,7 +104,7 @@
         </section>
         <section class="section-content">
           <h2>Conceptos Escenciales del Desarrollo Web</h2>
-          <h3>HTML</h3>
+          <h3 id="HTML">HTML</h3>
           <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado
           y la estructura del contenido.</p>
           <pre><code>
@@ -121,7 +121,7 @@
             &lt/html>
           </code></pre>
 
-          <h3>Etiquetas</h3>
+          <h3 id="etiquetas">Etiquetas</h3>
           <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene
           características y usos diferentes aunque visualmente den un resultado similar.</p>
           <p>Muchas etiquetas son fácil de diferencias como los headings o las imágenes y otras diferentes como header, footer,
@@ -129,25 +129,25 @@
           pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como
           Software Developer.</p>
 
-          <h3>DOM</h3>
+          <h3 id="DOM">DOM</h3>
           <p>El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol
           genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar
           dependencias, herencias en css y que tan complejo es nuestro proyecto.</p>
           <img src="images/dom.png" alt="Imagen DOM">
 
-          <h3>Semántica</h3>
+          <h3 id="semantica">Semántica</h3>
           <p>La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente decorativos y
           no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más
           relevantes que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck Go a diferenciar tu contenido,
           categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará a
           la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.</p>
 
-          <h3>Atributos</h3>
+          <h3 id="atributos">Atributos</h3>
           <p>Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el
           navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos
           funcionan en solo alguna etiquetas como src</p>
 
-          <h3>CSS</h3>
+          <h3 id="css">CSS</h3>
           <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir
           la presentación de documentos HTML</p>
           <img src="images/css.png" alt="Imagen CSS">
@@ -179,7 +179,6 @@
             <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
             <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
           </ul>
-
           <!--h3>Modelo de caja</h3!--> <!--Creo que esto no va-->
           <div class="slider">
             <scroll-container class="slider-container">
@@ -199,22 +198,22 @@
             <a href="#image-2" class="slider-bullet"></a>
             <a href="#image-3" class="slider-bullet"></a>
           </div>
-          <p>Si tienes alguna pregunta escribeme a <a href="mailto:cafer89@gmail.com"><span>cafer89@gmail.com</span></a></p>
+          <p class="contacto">Si tienes alguna pregunta escribeme a <a href="mailto:cafer89@gmail.com"><span>cafer89@gmail.com</span></a></p>
         </section>
-        <form action="">
+        <form action="" class="form">
             <h3>Suscríbete a nuestro Newsletter</h3>
             <input type="text" placeholder="Nombre">
             <input type="email" placeholder="Correo Electrónico">
             <input type="submit" value="Suscribirme">
         </form>
-        <footer>
-            <p>&copy Carlos Pinzón 2021</p>
-            <img src="vector/Facebook-Vector.png" alt="Facebook Vector Image">
-            <img src="vector/Instagram-Vector.png" alt="Instagram Vector Image">
-            <img src="vector/Twitter-Vector.png" alt="Twitter Vector Image">
-        </footer>
         </div>
     </div>
+    <footer>
+      <p>&copy Carlos Pinzón 2021</p>
+      <img src="vector/Facebook-Vector.png" alt="Facebook Vector Image">
+      <img src="vector/Instagram-Vector.png" alt="Instagram Vector Image">
+      <img src="vector/Twitter-Vector.png" alt="Twitter Vector Image">
+    </footer>
   </div>
 </body>
 </html>
