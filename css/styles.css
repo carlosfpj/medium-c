@@ -228,6 +228,10 @@ footer p {
   padding-block-end: 16px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 input {
   display: inline-block;
   width: 280px;
