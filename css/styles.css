@@ -110,6 +110,10 @@
   content: counter(tittleList) '. ';
 }
 
+.section-content img {
+  max-inline-size: 100%;
+}
+
 .section-content ol {
   font-family: 'roboto';
   font-weight: 400;
@@ -211,6 +215,8 @@ footer {
   background: #212429;
   color: #FFFFFF;
   text-align: center;
+  width: 100%;
+  max-inline-size: 100%;
 }
 
 footer img {
@@ -328,4 +334,44 @@ nav h3 {
   font-size: 14px;
   font-weight: 700;
   font-style: normal;
+}
+
+@media screen and (max-width: 360px){
+
+  body {
+    background-color: rosybrown;
+  }
+
+  .wrapper {
+    width: 328px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .variantes {
+    margin-bottom: 40px;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .contenido {
+    margin-block-end: 118px;
+  }
+
+  blockquote {
+    margin-block: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
 }
