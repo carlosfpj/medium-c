@@ -65,13 +65,15 @@
   display: block;
   /* height: 40px; */
   width: 280px;
-  padding: 8px 206px 8px 8px;
+  padding: 8px 0px 8px 8px;
   text-decoration: none;
   color: #616161;
 }
 
 .variantes a:hover {
   background: #000000;
+  max-inline-size: 100%;
+  width: 100%;
   border-radius: 4px;
   color: #ffffff;
 }
@@ -343,12 +345,14 @@ nav h3 {
   }
 
   .wrapper {
-    width: 328px;
+    max-inline-size: 328px;
     margin: auto;
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 32px;
+    margin-block-start: 40px;
+    margin-block-end: 16px;
   }
 
   .variantes {
@@ -373,5 +377,9 @@ nav h3 {
 
   h3 {
     font-size: 24px;
+  }
+
+  pre {
+    overflow: auto;
   }
 }
