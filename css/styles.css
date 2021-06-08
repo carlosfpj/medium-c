@@ -57,7 +57,7 @@
 }
 
 .variantes {
-  width: 280px;
+  width: 100%;
   margin-bottom: 106px;
 }
 
@@ -73,7 +73,7 @@
 .variantes a:hover {
   background: #000000;
   max-inline-size: 100%;
-  width: 100%;
+  width: 280px;
   border-radius: 4px;
   color: #ffffff;
 }
@@ -338,10 +338,14 @@ nav h3 {
   font-style: normal;
 }
 
+  /*
+    Responsive Design
+  */
+
 @media screen and (max-width: 360px){
 
-  body {
-    background-color: rosybrown;
+  .contacto {
+    display: none;
   }
 
   .wrapper {
@@ -359,6 +363,10 @@ nav h3 {
     margin-bottom: 40px;
   }
 
+  .variantes a:hover {
+    width: 100%;
+  }
+
   hr {
     display: none;
   }
@@ -369,6 +377,30 @@ nav h3 {
 
   blockquote {
     margin-block: 40px;
+    margin-inline: 0px;
+  }
+
+  blockquote p {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  blockquote span {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 24px;
+  }
+
+  .form {
+    margin-block-end: 40px ;
+  }
+
+  .form h3 {
+    margin-block-start: 40px;
+    margin-inline-start: 0px;
+    font-size: 20px;
   }
 
   h2 {
@@ -379,7 +411,42 @@ nav h3 {
     font-size: 24px;
   }
 
+  input {
+    width: 100%;
+    display: block;
+  }
+
+  input[type="text"] {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-block-end: 16px;
+  }
+
+  input[type="submit"] {
+    position: absolute;
+    right: 0px;
+    top: 104px;
+    width: 115.82px;
+  }
+
   pre {
     overflow: auto;
+  }
+
+  .section-content:first-child h2 {
+    display: none;
+  }
+
+  .section-content-tittle {
+    font-size: 32px;
+  }
+
+  .section-content ol {
+    padding-inline-start: 16px;
+    margin-block: 16px 24px;
+  }
+
+  .section-content ul {
+    padding-inline-start: 16px;
   }
 }
